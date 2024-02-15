@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{
+  text-align: justify;
+}
+
+/* esempio 0 circle */
+.circle{
+  width: 300px;
+  height: 300px;
+  float: left;
+  shape-outside: circle(50%);
+  background-color: rgba(255, 0, 0, .2);
+}
+/* /esempio 0 circle */
+
+/* esempio 0 ellipse */
+.ellipse{
+  width: 300px;
+  height: 700px;
+  float: left;
+  shape-outside: ellipse(170px 350px at 30%);
+  background-color: rgba(255, 0, 0, .2);
+}
+/* /esempio 0 ellipse */
+
+/* esempio 0 inset */
+.inset{
+  width: 300px;
+  height: 400px;
+  background-color: rgba(255, 0, 0, .2);
+  float: left;
+  shape-outside: inset(80px);
+}
+/* /esempio 0 inset */
+
+/* esempio 1*/
+.image{
+  width: 400px;
+  height: 400px;
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+  shape-outside: circle(50%);
+  margin: 20px;
+}
+
+.image-right{
+  float: right;
+}
+/* /esempio 1*/
+
+/* esempio 2*/
+.image-2{
+  width: 400px;
+  height: 400px;
+  float: left;
+  overflow: hidden;
+  shape-outside: polygon(0px 0px, 27px 19px, 194px 12px, 219px 60px, 240px 118px, 279px 164px, 315px 204px, 320px 246px, 340px 305px, 346px 347px, 31px 344px, 0px 400px);
+}
+
+.image-2-right{
+  float: right;
+  shape-margin: 20px;
+  clip-path: polygon(90px 193px, 254px 191px, 255px 21px, 292px 22px, 313px 56px, 397px 200px, 295px 358px, 258px 358px, 255px 232px, 90px 230px);
+  shape-outside: polygon(247px 371px, 247px 243px, 85px 241px, 87px 182px, 242px 180px, 240px 71px, 246px 56px, 257px 42px, 262px 39px, 316px 40px, 393px 179px, 396px 211px, 302px 370px);
+}
+/* /esempio 2*/
+
+/* esempio 3 */
+#foto h1{
+  font-size: 2rem;
+  color: red;
+}
+
+.container-2{
+  width: 1500px;
+  height: 900px;
+  overflow: hidden;
+  background-image: url(orso.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.element{
+  float: right;
+  overflow: hidden;
+  width: 650px;
+  height: 100%;
+  shape-outside: polygon(60px 845px, 53px 759px, 62px 637px, 5px 580px, 40px 470px, 97px 458px, 89px 378px, 44px 329px, 32px 229px, 53px 189px, 177px 145px, 248px 130px, 398px 142px, 377px 138px, 650px 0px, 650px 900px, 0px 900px);
+}
+/* /esempio 3 */
